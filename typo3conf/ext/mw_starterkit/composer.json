@@ -1,0 +1,30 @@
+{
+  "name": "mittwald/distribution",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 distribution for Mittwald CMS Service",
+  "minimum-stability": "beta",
+  "license": "GPL-2",
+  "version": "0.0.2",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://composer.typo3.org/"
+    }
+  ],
+  "require": {
+    "typo3/cms": "~7.6",
+    "typo3-ter/gridelements": "*",
+    "typo3-ter/news": "*",
+    "typo3-ter/powermail": "^3.0.0"
+  },
+  "authors": [
+    {
+      "name": "Kevin Purrmann",
+      "email": "entwicklung@purrmann-websolutions.de"
+    }
+  ],
+  "replace": {
+    "mw_starterkit": "self.version",
+    "typo3-ter/mittwald-distribution": "self.version"
+  }
+}

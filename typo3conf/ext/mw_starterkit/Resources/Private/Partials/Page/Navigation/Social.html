@@ -1,0 +1,17 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="social">
+    <f:if condition="{settings.social.facebook}">
+        <f:link.external uri="{settings.social.facebook}"><i class="fa fa-facebook"></i></f:link.external>
+    </f:if>
+    <f:if condition="{settings.social.twitter}">
+        <f:link.external uri="{settings.social.twitter}"><i class="fa fa-twitter"></i></f:link.external>
+    </f:if>
+    <f:if condition="{settings.social.google}">
+        <f:link.external uri="{settings.social.google}"><i class="fa fa-google-plus"></i></f:link.external>
+    </f:if>
+    <f:if condition="{settings.social.mail}">
+        <f:link.email email="{settings.social.mail}"><i
+                class="fa fa-envelope-o"></i></f:link.email>
+    </f:if>
+</div>
+</html>

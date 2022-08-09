@@ -1,0 +1,52 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+<div id="c{data.uid}">
+    <f:if condition="{images}">
+        <f:switch expression="{data.layout}">
+            <f:case value="300">
+                <section>
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="logo-partners">
+                                <f:for each="{images}" as="image">
+                                    <div class="col-md-2 col-xs-4">
+                                        <f:if condition="{image.link}">
+                                            <f:then>
+                                                <f:link.page target="_new" pageUid="{image.link}">
+                                                    <f:media
+                                                            file="{image}"
+                                                            class="wow fadeInRight"
+                                                            additionalAttributes="{
+                                                            data-wow-delay: '.2s',
+                                                            data-wow-duration:'.6s'
+                                                        }"
+                                                            alt="{image.title}"/>
+                                                </f:link.page>
+                                            </f:then>
+                                            <f:else>
+                                                <f:media
+                                                        file="{image}"
+                                                        class="wow fadeInRight"
+                                                        additionalAttributes="{
+                                                            data-wow-delay: '.2s',
+                                                            data-wow-duration:'.6s'
+                                                        }"
+                                                        alt="{image.title}"/>
+                                            </f:else>
+                                        </f:if>
+
+                                    </div>
+
+                                </f:for>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </f:case>
+            <f:defaultCase>
+                <f:render partial="Image" arguments="{files: images, data: data, class: 'img-responsive'}"/>
+            </f:defaultCase>
+        </f:switch>
+    </f:if>
+</div>
+</html>

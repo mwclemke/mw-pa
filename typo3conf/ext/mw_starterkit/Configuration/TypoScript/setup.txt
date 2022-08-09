@@ -1,0 +1,8 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:mw_starterkit/Configuration/TypoScript/Content/" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:mw_starterkit/Configuration/TypoScript/ContentElements/" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:mw_starterkit/Configuration/TypoScript/Extensions/" extensions="ts">
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:mw_starterkit/Configuration/TypoScript/Page/" extensions="ts">
+
+
+

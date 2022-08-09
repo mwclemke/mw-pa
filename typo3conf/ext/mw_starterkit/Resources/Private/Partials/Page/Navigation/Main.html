@@ -1,0 +1,30 @@
+{namespace mw = MW\MwStarterkit\ViewHelpers}
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
+<head>
+    <title>Navigation</title>
+</head>
+<body>
+<f:section name="Main">
+    <!-- mainmenu begin -->
+    <mw:menu.directory pageUids="{0: '{mainMenuStartingPid}'}" as="pages" levelAs="level" maximumLevel="2">
+        <f:if condition="{pages}">
+            <ul id="{f:if(condition:'{mainMenuClass}',then:'c{mainMenuClass}',else:'mainmenu')}">
+                <f:for each="{pages}" as="page">
+                    <li>
+                        <f:link.page pageUid="{page.uid}">
+                            {page.title}
+                        </f:link.page>
+                        <f:render partial="Navigation/Main"
+                                  arguments="{mainMenuStartingPid: '{page.uid}', mainMenuClass: 'second{page.uid}'}"
+                                  section="Main"/>
+                    </li>
+                </f:for>
+            </ul>
+        </f:if>
+    </mw:menu.directory>
+    <!-- mainmenu close -->
+</f:section>
+</body>
+</html>

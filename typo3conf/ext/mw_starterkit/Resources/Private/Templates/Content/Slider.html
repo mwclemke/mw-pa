@@ -1,0 +1,71 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{assets}">
+    <div id="slider">
+        <!-- revolution slider begin -->
+        <div class="fullwidthbanner-container">
+            <div id="revolution-slider">
+                <ul>
+                    <f:for each="{assets}" as="image">
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+                            <!--  BACKGROUND IMAGE -->
+                            <img src="{image.publicUrl}" />
+
+                            <f:if condition="{image.title}">
+                                <div class="tp-caption h-line lft"
+                                     data-x="center"
+                                     data-y="170"
+                                     data-speed="800"
+                                     data-start="1000"
+                                     data-easing="easeInOutCubic"
+                                     data-endspeed="300">
+                                </div>
+
+                                <div class="tp-caption lft custom-font-1"
+                                     data-x="center"
+                                     data-y="220"
+                                     data-speed="800"
+                                     data-start="800"
+                                     data-easing="easeInOutCubic">
+                                    <f:format.html>{image.title}</f:format.html>
+                                </div>
+
+                                <div class="tp-caption sfb custom-font-2"
+                                     data-x="center"
+                                     data-y="270"
+                                     data-speed="800"
+                                     data-start="1400"
+                                     data-easing="easeInOutCubic">
+                                    <f:format.html>{image.description}</f:format.html>
+                                </div>
+
+                                <div class="tp-caption sfb text-left"
+                                     data-x="center"
+                                     data-y="330"
+                                     data-speed="800"
+                                     data-start="1600"
+                                     data-easing="easeInOutCubic">
+                                    <f:if condition="{image.link}">
+                                        <f:link.page pageUid="{image.link}" class="btn btn-slider">
+                                            <f:if condition="{image.alternative}">
+                                                <f:then>{image.alternative}</f:then>
+                                                <f:else>
+                                                    <f:translate
+                                                            key="LLL:EXT:mw_starterkit/Resources/Private/Language/Frontend.xlf:read-more"/>
+                                                </f:else>
+                                            </f:if>
+
+                                        </f:link.page>
+                                    </f:if>
+                                </div>
+                            </f:if>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
+        <!-- revolution slider close -->
+    </div>
+
+</f:if>
+</html>

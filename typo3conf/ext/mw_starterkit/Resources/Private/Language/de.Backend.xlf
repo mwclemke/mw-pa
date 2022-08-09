@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="de" datatype="plaintext" original="messages" date="2016-01-21T010:45:12Z"
+          product-name="mw_starterkit">
+        <header/>
+        <body>
+
+            <trans-unit id="field.header_layout.7">
+                <target>Layout 7 mit farbigem Rand (unten)</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.default">
+                <target>Inhaltslayout</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.1-column">
+                <target>Eine Spalte</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.2-columns-50-50">
+                <target>Zwei Spalten 50/50</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.2-columns-50-50-full-screen">
+                <target>Zwei Spalten 50/50 full screen with background image on right side</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.2-columns-25-75">
+                <target>Zwei Spalten 25/75</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.2-columns-75-25">
+                <target>Zwei Spalten 75/25</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.2-columns-33-66">
+                <target>Zwei Spalten 33/66</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.2-columns-66-33">
+                <target>Zwei Spalten 66/33</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.3-columns-33-33-33">
+                <target>Drei Spalten 33/33/33</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.3-columns-33-33-33-full-screen">
+                <target>Drei Spalten 33/33/33 full screen with background for each column</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.4-columns-25-25-25-25">
+                <target>Vier Spalten 25/25/25/25</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.right-content">
+                <target>Right content</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.left-content">
+                <target>Inhalt Links</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.middle-content">
+                <target>Inhalt Mitte</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.middle-left-content">
+                <target>Mittlerer Inhalt Links</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.middle-right-content">
+                <target>Mittlerer Inhalt Rechts</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.background-image">
+                <target>Hintergrundbild</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.homepage">
+                <target>Startseite</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.content">
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.slider">
+                <target>Bühne</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer.1">
+                <target>Footer linke Spalte</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer.2">
+                <target>Footer mittlere Spalte</target>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.footer.3">
+                <target>Footer rechte Spalte</target>
+            </trans-unit>
+            <trans-unit id="field.header_style">
+                <target>Überschriftentyp</target>
+            </trans-unit>
+            <trans-unit id="field.header_style.0">
+                <target>mit Randlinie</target>
+            </trans-unit>
+            <trans-unit id="field.header_style.1">
+                <target>ohne Randlinie</target>
+            </trans-unit>
+            <trans-unit id="field.facebook">
+                <target>Facebook Account</target>
+            </trans-unit>
+            <trans-unit id="field.google">
+                <target>Google+ Account</target>
+            </trans-unit>
+            <trans-unit id="field.address">
+                <target>Adrese</target>
+            </trans-unit>
+            <trans-unit id="field.twitter">
+                <target>Twitter Account</target>
+            </trans-unit>
+            <trans-unit id="field.instagram">
+                <target>Instagram Account</target>
+            </trans-unit>
+            <trans-unit id="layout.1">
+                <target>Seite mit margin top</target>
+            </trans-unit>
+            <trans-unit id="button">
+                <target>Button Inhalt</target>
+            </trans-unit>
+            <trans-unit id="button.link">
+                <target>Link des Buttons</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
