@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
+<head>
+    <title>Header Html</title>
+</head>
+<body>
+<f:section name="Main">
+
+    <header>
+        <div class="container">
+            <span id="menu-btn"></span>
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- logo begin -->
+                    <div id="logo">
+                        <div class="inner">
+                            <f:link.page pageUid="1">
+                                <f:image src="{settings.logo}"/>
+                            </f:link.page>
+
+                        </div>
+                    </div>
+                    <!-- logo close -->
+                </div>
+                <div class="col-md-9">
+                    <nav id="mainmenu-container">
+                        <f:render partial="Navigation/Main" section="Main" arguments="{_all}"/>
+                    </nav>
+                    <!-- social icons -->
+                    <f:render partial="Navigation/Social" arguments="{_all}"/>
+                    <!-- social icons close -->
+                </div>
+
+            </div>
+        </div>
+    </header>
+</f:section>
+</body>
+</html>

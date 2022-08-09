@@ -1,0 +1,1484 @@
+a:7:{s:10:"identifier";s:32:"fa3aa28aa5cd41d55e7b8132b54ce3a6";s:7:"page_id";i:2;s:7:"content";s:41377:"<!DOCTYPE html>
+<html lang="de">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2020 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at https://typo3.org/
+-->
+
+
+
+<title>Willkommen: Mittwald Starterkit</title>
+<meta name="generator" content="TYPO3 CMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" type="text/css" href="/typo3temp/assets/compressed/merged-b6bf5d16c361d31278da5f09459f5e71-d77e183813593dae191d8879a3e30ada.css.1660050439.gzip" media="all">
+
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp" type="text/javascript"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+/*_scriptCode*/
+
+			// decrypt helper function
+		function decryptCharcode(n,start,end,offset) {
+			n = n + offset;
+			if (offset > 0 && n > end) {
+				n = start + (n - end - 1);
+			} else if (offset < 0 && n < start) {
+				n = end - (start - n - 1);
+			}
+			return String.fromCharCode(n);
+		}
+			// decrypt string
+		function decryptString(enc,offset) {
+			var dec = "";
+			var len = enc.length;
+			for(var i=0; i < len; i++) {
+				var n = enc.charCodeAt(i);
+				if (n >= 0x2B && n <= 0x3A) {
+					dec += decryptCharcode(n,0x2B,0x3A,offset);	// 0-9 . , - + / :
+				} else if (n >= 0x40 && n <= 0x5A) {
+					dec += decryptCharcode(n,0x40,0x5A,offset);	// A-Z @
+				} else if (n >= 0x61 && n <= 0x7A) {
+					dec += decryptCharcode(n,0x61,0x7A,offset);	// a-z
+				} else {
+					dec += enc.charAt(i);
+				}
+			}
+			return dec;
+		}
+			// decrypt spam-protected emails
+		function linkTo_UnCryptMailto(s) {
+			location.href = decryptString(s,-2);
+		}
+		
+
+/*]]>*/
+</script>
+
+
+</head>
+<body>
+<div xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
+    <div id="preloader"></div>
+    <div id="wrapper">
+        
+
+    <header>
+        <div class="container">
+            <span id="menu-btn"></span>
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- logo begin -->
+                    <div id="logo">
+                        <div class="inner">
+                            
+                                <img src="/typo3conf/ext/mw_starterkit/Resources/Public/Images/Frontend/logo.png" width="180" height="32" alt="" />
+                            
+
+                        </div>
+                    </div>
+                    <!-- logo close -->
+                </div>
+                <div class="col-md-9">
+                    <nav id="mainmenu-container">
+                        
+    <!-- mainmenu begin -->
+    
+        
+            <ul id="mainmenu">
+                
+                    <li>
+                        <a href="/index.php?id=19">
+                            Home
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=13">
+                            Grids
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+        
+            <ul id="csecond13">
+                
+                    <li>
+                        <a href="/index.php?id=18">
+                            eine Spalte
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=17">
+                            zwei Spalten
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=16">
+                            drei Spalten
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=15">
+                            vier Spalten
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=14">
+                            verschiedene Spalten
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+            </ul>
+        
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=6">
+                            Features
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+        
+            <ul id="csecond6">
+                
+                    <li>
+                        <a href="/index.php?id=12">
+                            Accordion
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=11">
+                            Google Maps
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=10">
+                            Team Profile
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=9">
+                            Feature-Icon Boxes
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=8">
+                            Karussell
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=7">
+                            Galerie
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+            </ul>
+        
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=4">
+                            News
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+                    <li>
+                        <a href="/index.php?id=3">
+                            Kontakt
+                        </a>
+                        
+    <!-- mainmenu begin -->
+    
+    <!-- mainmenu close -->
+
+                    </li>
+                
+            </ul>
+        
+    
+    <!-- mainmenu close -->
+
+                    </nav>
+                    <!-- social icons -->
+                    
+<div class="social">
+    
+        <a href="http://www.facebook.com/max.mustermann"><i class="fa fa-facebook"></i></a>
+    
+    
+        <a href="https://twitter.com/max.mustermann"><i class="fa fa-twitter"></i></a>
+    
+    
+        <a href="https://plus.google.com/u/0/max.mustermann"><i class="fa fa-google-plus"></i></a>
+    
+    
+        <a href="javascript:linkTo_UnCryptMailto('ocknvq,mqpvcmvBowuvgt0ocpp');"><i
+                class="fa fa-envelope-o"></i></a>
+    
+</div>
+
+                    <!-- social icons close -->
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+        
+        
+
+    <div id="slider">
+        <!-- revolution slider begin -->
+        <div class="fullwidthbanner-container">
+            <div id="revolution-slider">
+                <ul>
+                    
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+                            <!--  BACKGROUND IMAGE -->
+                            <img src="/fileadmin/Content/Slider/Home/header_01.jpg" />
+
+                            
+                                <div class="tp-caption h-line lft"
+                                     data-x="center"
+                                     data-y="170"
+                                     data-speed="800"
+                                     data-start="1000"
+                                     data-easing="easeInOutCubic"
+                                     data-endspeed="300">
+                                </div>
+
+                                <div class="tp-caption lft custom-font-1"
+                                     data-x="center"
+                                     data-y="220"
+                                     data-speed="800"
+                                     data-start="800"
+                                     data-easing="easeInOutCubic">
+                                    <p>Herzlich Willkommen</p>
+                                </div>
+
+                                <div class="tp-caption sfb custom-font-2"
+                                     data-x="center"
+                                     data-y="270"
+                                     data-speed="800"
+                                     data-start="1400"
+                                     data-easing="easeInOutCubic">
+                                    <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. </p>
+                                </div>
+
+                                <div class="tp-caption sfb text-left"
+                                     data-x="center"
+                                     data-y="330"
+                                     data-speed="800"
+                                     data-start="1600"
+                                     data-easing="easeInOutCubic">
+                                    
+                                        <a class="btn btn-slider" href="/index.php?id=2">
+                                            weiterlesen...
+
+                                        </a>
+                                    
+                                </div>
+                            
+                        </li>
+                    
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+                            <!--  BACKGROUND IMAGE -->
+                            <img src="/fileadmin/Content/Slider/Home/header_02.jpg" />
+
+                            
+                                <div class="tp-caption h-line lft"
+                                     data-x="center"
+                                     data-y="170"
+                                     data-speed="800"
+                                     data-start="1000"
+                                     data-easing="easeInOutCubic"
+                                     data-endspeed="300">
+                                </div>
+
+                                <div class="tp-caption lft custom-font-1"
+                                     data-x="center"
+                                     data-y="220"
+                                     data-speed="800"
+                                     data-start="800"
+                                     data-easing="easeInOutCubic">
+                                    <p>Grid Layouts</p>
+                                </div>
+
+                                <div class="tp-caption sfb custom-font-2"
+                                     data-x="center"
+                                     data-y="270"
+                                     data-speed="800"
+                                     data-start="1400"
+                                     data-easing="easeInOutCubic">
+                                    <p>verschiedene Gridelemente stehen zur Auswahl</p>
+                                </div>
+
+                                <div class="tp-caption sfb text-left"
+                                     data-x="center"
+                                     data-y="330"
+                                     data-speed="800"
+                                     data-start="1600"
+                                     data-easing="easeInOutCubic">
+                                    
+                                        <a class="btn btn-slider" href="/index.php?id=13">
+                                            
+                                                    weiterlesen
+                                                
+
+                                        </a>
+                                    
+                                </div>
+                            
+                        </li>
+                    
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+                            <!--  BACKGROUND IMAGE -->
+                            <img src="/fileadmin/Content/Slider/Home/header_03.jpg" />
+
+                            
+                                <div class="tp-caption h-line lft"
+                                     data-x="center"
+                                     data-y="170"
+                                     data-speed="800"
+                                     data-start="1000"
+                                     data-easing="easeInOutCubic"
+                                     data-endspeed="300">
+                                </div>
+
+                                <div class="tp-caption lft custom-font-1"
+                                     data-x="center"
+                                     data-y="220"
+                                     data-speed="800"
+                                     data-start="800"
+                                     data-easing="easeInOutCubic">
+                                    <p>Features</p>
+                                </div>
+
+                                <div class="tp-caption sfb custom-font-2"
+                                     data-x="center"
+                                     data-y="270"
+                                     data-speed="800"
+                                     data-start="1400"
+                                     data-easing="easeInOutCubic">
+                                    <p>Accordion, Karussell und eine Galerie</p>
+                                </div>
+
+                                <div class="tp-caption sfb text-left"
+                                     data-x="center"
+                                     data-y="330"
+                                     data-speed="800"
+                                     data-start="1600"
+                                     data-easing="easeInOutCubic">
+                                    
+                                        <a class="btn btn-slider" href="/index.php?id=6">
+                                            weiterlesen
+
+                                        </a>
+                                    
+                                </div>
+                            
+                        </li>
+                    
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="2500" data-delay="5000">
+                            <!--  BACKGROUND IMAGE -->
+                            <img src="/fileadmin/Content/Slider/Home/header_04.jpg" />
+
+                            
+                                <div class="tp-caption h-line lft"
+                                     data-x="center"
+                                     data-y="170"
+                                     data-speed="800"
+                                     data-start="1000"
+                                     data-easing="easeInOutCubic"
+                                     data-endspeed="300">
+                                </div>
+
+                                <div class="tp-caption lft custom-font-1"
+                                     data-x="center"
+                                     data-y="220"
+                                     data-speed="800"
+                                     data-start="800"
+                                     data-easing="easeInOutCubic">
+                                    <p>Kontakt</p>
+                                </div>
+
+                                <div class="tp-caption sfb custom-font-2"
+                                     data-x="center"
+                                     data-y="270"
+                                     data-speed="800"
+                                     data-start="1400"
+                                     data-easing="easeInOutCubic">
+                                    <p>Kontakformular und Google Maps</p>
+                                </div>
+
+                                <div class="tp-caption sfb text-left"
+                                     data-x="center"
+                                     data-y="330"
+                                     data-speed="800"
+                                     data-start="1600"
+                                     data-easing="easeInOutCubic">
+                                    
+                                        <a class="btn btn-slider" href="/index.php?id=3">
+                                            weiterlesen
+
+                                        </a>
+                                    
+                                </div>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- revolution slider close -->
+    </div>
+
+
+
+
+        <div class="clearfix"></div>
+        <div id="content" class="no-padding">
+            
+
+        
+                <div class="box-container">
+                    
+    
+
+    
+            
+        
+
+
+
+
+
+
+    
+            
+
+
+    <div style="background-image: url('/fileadmin/Content/Home/background_01.jpg'); background-size: cover"
+         class="box-one-third light-text">
+        <div class="inner wow" data-wow-delay="0s">
+            
+
+
+        
+                <div class="media-body">
+                    
+
+    
+            
+
+    
+            
+    <h3>
+    
+        ICON BOXES
+        
+    
+</h3>
+
+            
+        
+
+
+
+        
+
+
+
+
+
+
+                    <p> Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt  sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in  dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der  allmächtigen Interpunktion werden die Blindtexte beherrscht – ein  geradezu unorthographisches Leben. </p>
+                </div>
+            
+    
+
+
+
+
+
+<a class="btn-border-light" href="/index.php?id=9">zu den Icons</a>
+
+        </div>
+    </div>
+
+
+    <div style="background-image: url('/fileadmin/Content/Home/background_02.jpg'); background-size: cover"
+         class="box-one-third light-text">
+        <div class="inner wow" data-wow-delay="0s">
+            
+
+
+        
+                <div class="media-body">
+                    
+
+    
+            
+
+    
+            
+    <h3>
+    
+        Team Profil
+        
+    
+</h3>
+
+            
+        
+
+
+
+        
+
+
+
+
+
+
+                    <p>Eines Tages aber beschloß eine kleine Zeile Blindtext, ihr Name war  Lorem Ipsum, hinaus zu gehen in die weite Grammatik. Der große Oxmox  riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden  Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ  sich nicht beirren. </p>
+                </div>
+            
+    
+
+
+
+
+
+<a class="btn-border-light" href="/index.php?id=10">zu den Team Profilen</a>
+
+        </div>
+    </div>
+
+
+    <div style="background-image: url('/fileadmin/Content/Home/background_03.jpg'); background-size: cover"
+         class="box-one-third light-text">
+        <div class="inner wow" data-wow-delay="0s">
+            
+
+
+        
+                <div class="media-body">
+                    
+
+    
+            
+
+    
+            
+    <h3>
+    
+        News
+        
+    
+</h3>
+
+            
+        
+
+
+
+        
+
+
+
+
+
+
+                    <p>Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel  und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges  erklommen hatte, warf es einen letzten Blick zurück auf die Skyline  seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die  Subline seiner eigenen Straße, der Zeilengasse.</p>
+                </div>
+            
+    
+
+
+
+
+
+<a class="btn-border-light" href="/index.php?id=4">weiter zu den News</a>
+
+        </div>
+    </div>
+
+
+
+
+
+
+            <div class="clearfix"></div>
+        
+
+                </div>
+            
+    
+
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    
+    
+
+    
+            
+
+    
+            <div class="text-center">
+                
+    <h2>
+    
+        Feature Box
+        
+            <span>Einige Beispiele der Feature Boxen</span>
+        
+    
+</h2>
+
+
+                
+                    <div class="small-border wow flipInY" data-wow-delay=".8s" data-wow-duration=".8s"></div>
+                
+            </div>
+        
+
+
+
+        
+
+
+
+
+
+
+    
+            
+
+
+<div class="col-md-6">
+    
+        
+
+        <div class="col-md-12">
+            <div class="box-with-icon-left">
+                <i class="fa fa-map-marker icon-big"></i>
+                <div class="text">
+                    
+
+    
+            
+
+    
+            
+    <h3>
+    
+        Google Maps
+        
+    
+</h3>
+
+            
+                <div class="tiny-border" data-wow-delay=".8s" data-wow-duration=".8s"></div>
+            
+        
+
+
+
+        
+
+
+
+
+
+
+                    <p>Integration von Google Maps. Der große Oxmox riet ihr davon ab, da es dort wimmele von bösen Kommata, wilden Fragezeichen und hinterhältigen Semikoli, doch das Blindtextchen ließ sich nicht beirren.</p>
+<p>&nbsp;</p>
+                    <div class="divider-single"></div>
+                    
+                        <a class="btn-text" href="http://google.de">
+                            
+                                    weiterlesen
+                                
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+<div class="divider-double"></div>
+
+
+        <div class="col-md-12">
+            <div class="box-with-icon-left">
+                <i class="fa fa-retweet icon-big"></i>
+                <div class="text">
+                    
+
+    
+            
+
+    
+            
+    <h3>
+    
+        Karussell
+        
+    
+</h3>
+
+            
+                <div class="tiny-border" data-wow-delay=".8s" data-wow-duration=".8s"></div>
+            
+        
+
+
+
+        
+
+
+
+
+
+
+                    <p>Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse.</p>
+<p>&nbsp;</p>
+                    <div class="divider-single"></div>
+                    
+                        <a class="btn-text" href="/index.php?id=8">
+                            
+                                    weiterlesen
+                                
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+<div class="divider-double"></div>
+
+    
+</div>
+<div class="col-md-6">
+    
+        
+
+        <div class="col-md-12">
+            <div class="box-with-icon-left">
+                <i class="fa fa-picture-o icon-big"></i>
+                <div class="text">
+                    
+
+    
+            
+
+    
+            
+    <h3>
+    
+        Galerie
+        
+    
+</h3>
+
+            
+                <div class="tiny-border" data-wow-delay=".8s" data-wow-duration=".8s"></div>
+            
+        
+
+
+
+        
+
+
+
+
+
+
+                    <p>Es packte seine sieben Versalien, schob sich sein Initial in den Gürtel und machte sich auf den Weg. Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen, die Headline von Alphabetdorf und die Subline seiner eigenen Straße, der Zeilengasse. </p>
+                    <div class="divider-single"></div>
+                    
+                        <a class="btn-text" href="/index.php?id=7">
+                            
+                                    weiterlesen
+                                
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+<div class="divider-double"></div>
+
+
+        <div class="col-md-12">
+            <div class="box-with-icon-left">
+                <i class="fa fa-bars icon-big"></i>
+                <div class="text">
+                    
+
+    
+            
+
+    
+            
+    <h3>
+    
+        Accordion
+        
+    
+</h3>
+
+            
+                <div class="tiny-border" data-wow-delay=".8s" data-wow-duration=".8s"></div>
+            
+        
+
+
+
+        
+
+
+
+
+
+
+                    <p>Die Copy warnte das Blindtextchen, da, wo sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von ihrem Ursprung noch übrig wäre, sei das Wort &quot;und&quot; und das Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land zurückkehren.</p>
+<p>&nbsp;</p>
+                    <div class="divider-single"></div>
+                    
+                        <a class="btn-text" href="/index.php?id=12">
+                            
+                                    weiterlesen
+                                
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    
+
+<div class="divider-double"></div>
+
+    
+</div>
+
+
+        
+
+
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </section>
+    
+
+
+
+        <section style="background-color: #eee;">
+            <div class="container">
+                <div class="row">
+                    
+    
+
+    
+            
+        
+
+
+
+
+
+
+    
+            
+
+
+<div class="col-md-12">
+    
+        
+
+        <div id="gallery" class="gallery full-gallery ex-gallery zoom-gallery">
+            
+
+    
+        
+            <div class="item illustration">
+                <div class="picframe">
+                    <a data-gallery="gallery-130" href="/fileadmin/Content/Galerie/bildgalerie-1.jpg">
+                        <span class="overlay"></span>
+                        
+                    <span class="pf_text">
+                        <span class="project-name">Galeriebild 1</span>
+                        <span class="small-border"></span>
+                    </span>
+                        
+                        <img src="/fileadmin/_processed_/0/5/csm_bildgalerie-1_240ccabe2f.jpg" width="371" height="247" alt="" title="Galeriebild 1" />
+                    </a>
+                </div>
+            </div>
+        
+    
+        
+            <div class="item illustration">
+                <div class="picframe">
+                    <a data-gallery="gallery-130" href="/fileadmin/Content/Galerie/bildgalerie-2.jpg">
+                        <span class="overlay"></span>
+                        
+                    <span class="pf_text">
+                        <span class="project-name">Galeriebild 2</span>
+                        <span class="small-border"></span>
+                    </span>
+                        
+                        <img src="/fileadmin/_processed_/0/4/csm_bildgalerie-2_a25654709a.jpg" width="371" height="247" alt="" title="Galeriebild 2" />
+                    </a>
+                </div>
+            </div>
+        
+    
+
+    
+        
+            <div class="item illustration">
+                <div class="picframe">
+                    <a data-gallery="gallery-130" href="/fileadmin/Content/Galerie/bildgalerie-3.jpg">
+                        <span class="overlay"></span>
+                        
+                    <span class="pf_text">
+                        <span class="project-name">Galeriebild 3</span>
+                        <span class="small-border"></span>
+                    </span>
+                        
+                        <img src="/fileadmin/_processed_/9/3/csm_bildgalerie-3_2cd7b4dc56.jpg" width="371" height="247" alt="" title="Galeriebild 3" />
+                    </a>
+                </div>
+            </div>
+        
+    
+        
+    
+
+
+
+        </div>
+    
+
+
+
+
+    
+</div>
+
+
+        
+
+
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </section>
+    
+
+
+
+        
+                <section class="side-bg">
+                    <div class="col-md-6 col-md-offset-6 pull-right image-container">
+
+                        <div class="background-image"
+                             style="background-image: url('/fileadmin/Content/Home/fullpage-background-02.jpg'); background-size: cover"></div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            
+    
+
+
+
+
+
+
+    
+            
+
+<div class="col-md-5 wow fadeInRight" data-wow-delay=".5s" data-wow-duration=".8s">
+    
+        
+
+
+    <div class="testi-carousel testi-slider wow fadeIn" data-wow-delay="0s"
+         data-wow-duration="1s">
+        
+            <div class="item">
+                
+
+
+        
+                <div class="media-body">
+                    
+
+    
+            
+        
+
+
+
+
+
+
+                    <p><blockquote>Multi-modal container units, designed as reusable carriers to facilitate unit load handling of the goods contained, are also referred to as cargo, specially by shipping lines and logistics operators.</blockquote></p>
+<p>Max Mustermann</p>
+                </div>
+            
+    
+
+
+
+
+            </div>
+        
+            <div class="item">
+                
+
+
+        
+                <div class="media-body">
+                    
+
+    
+            
+        
+
+
+
+
+
+
+                    <p><blockquote>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</blockquote></p>
+                </div>
+            
+    
+
+
+
+
+            </div>
+        
+    </div>
+
+
+    
+</div>
+
+
+        
+
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </section>
+
+            
+    
+
+
+
+        <section style="background-image: url('/fileadmin/Content/Home/fullpage-background.jpg'); background-size: cover"
+                 class="light-text">
+            <div class="container">
+                <div class="row">
+                    
+    
+
+    
+            
+
+    
+            <div class="text-center">
+                
+    <h2>
+    
+        FAQ
+        
+            <span>häufig gestellte Fragen</span>
+        
+    
+</h2>
+
+
+                
+                    <div class="small-border wow flipInY" data-wow-delay=".8s" data-wow-duration=".8s"></div>
+                
+            </div>
+        
+
+
+
+        
+
+
+
+
+
+
+    
+            
+
+
+<div class="col-md-6">
+    
+        
+
+
+    <ul class="accordion">
+        
+            <li>
+                <a class="NoneActive">erstes Element</a>
+                <div class="content" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    
+                </div>
+            </li>
+        
+            <li>
+                <a class="NoneActive">zweites Element</a>
+                <div class="content" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    
+                </div>
+            </li>
+        
+            <li>
+                <a class="NoneActive">drittes Element</a>
+                <div class="content" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    
+                </div>
+            </li>
+        
+            <li>
+                <a class="NoneActive">viertes Element</a>
+                <div class="content" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    
+                </div>
+            </li>
+        
+    </ul>
+
+
+    
+</div>
+<div class="col-md-6">
+    
+        
+
+
+    <ul class="accordion">
+        
+            <li>
+                <a class="NoneActive">erstes Element</a>
+                <div class="content" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    
+                </div>
+            </li>
+        
+            <li>
+                <a class="NoneActive">zweites Element</a>
+                <div class="content" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    
+                </div>
+            </li>
+        
+            <li>
+                <a class="NoneActive">drittes Element</a>
+                <div class="content" style="display: none">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    
+                </div>
+            </li>
+        
+            <li>
+                <a class="NoneActive">viertes Element</a>
+                <div class="content" style="display: none">
+                    <p>vieLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
+                    
+                </div>
+            </li>
+        
+    </ul>
+
+
+    
+</div>
+
+
+        
+
+
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </section>
+    
+
+
+
+        <div class="call-to-action text-light">
+            <div class="container">
+                <div class="row">
+                    
+    
+
+
+
+
+
+
+    
+            
+
+
+<div class="col-md-8">
+    
+        
+<div id="c123"><h2>
+    
+        Haben Sie noch Fragen?
+        
+    
+</h2></div>
+
+
+    
+</div>
+<div class="col-md-4">
+    
+        
+
+<a class="btn-border-light" href="/index.php?id=3">Treten Sie mit uns in Kontakt</a>
+
+    
+</div>
+
+
+        
+
+                </div>
+            </div>
+        </div>
+    
+
+
+        </div>
+    
+        
+
+    <!-- footer begin -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-4">
+                    
+<div id="c110"><h3>
+    
+        Features
+        
+    
+</h3><div class="tiny-border" data-wow-delay=".8s" data-wow-duration=".8s"></div><ul><li><a href="/index.php?id=12" title="Accordion"><span>Accordion</span></a></li><li><a href="/index.php?id=11" title="Google Maps"><span>Google Maps</span></a></li><li><a href="/index.php?id=10" title="Team Profile"><span>Team Profile</span></a></li><li><a href="/index.php?id=9" title="Feature-Icon Boxes"><span>Feature-Icon Boxes</span></a></li><li><a href="/index.php?id=8" title="Karussell"><span>Karussell</span></a></li><li><a href="/index.php?id=7" title="Galerie"><span>Galerie</span></a></li></ul></div>
+
+
+                </div>
+
+                <div class="col-md-4">
+                    
+<div id="c111"><h3>
+    
+        Grids
+        
+    
+</h3><div class="tiny-border" data-wow-delay=".8s" data-wow-duration=".8s"></div><ul><li><a href="/index.php?id=18" title="eine Spalte"><span>eine Spalte</span></a></li><li><a href="/index.php?id=17" title="zwei Spalten"><span>zwei Spalten</span></a></li><li><a href="/index.php?id=16" title="drei Spalten"><span>drei Spalten</span></a></li><li><a href="/index.php?id=15" title="vier Spalten"><span>vier Spalten</span></a></li><li><a href="/index.php?id=14" title="verschiedene Spalten"><span>verschiedene Spalten</span></a></li></ul></div>
+
+
+                </div>
+
+                <div class="col-md-4">
+                    
+
+
+        
+                <div class="media-body">
+                    
+
+    
+            
+
+    
+            
+    <h3>
+    
+        Kontakt
+        
+    
+</h3>
+
+            
+                <div class="tiny-border" data-wow-delay=".8s" data-wow-duration=".8s"></div>
+            
+        
+
+
+
+        
+
+
+
+
+
+
+                    <p><b>Mustermann GmbH</b><br /><br />Musterstraße 100<br />12345 Musterhausen <br /><br />Fon: +49&nbsp; 1234/ 56 78 98<br />E-Mail: kontakt@muster.mann</p>
+                </div>
+            
+    
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer close -->
+
+    </div>
+</div>
+<script src="/typo3temp/assets/compressed/jquery.min-c4a887bdc00bc0bca2f3149ad3c76e7f.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/bootstrap.min-ceb1f9d97ce91930d0e697035bbe4ce7.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.isotope.min-7364ce8add83995e56ecafc011095dd0.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/easing-83a8cee4a185e1867e9215c299c64bc2.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.ui.totop-85d2e1f9114cd4d464a52a105734906e.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/ender-b4d0cedf4001bcf37b98a3439e285255.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/owl.carousel-47b1223be7e694076b0bd5ce3fcf3fb0.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.fitvids-5ccde80527597d197f8f7cb24e1b14be.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.plugin-65bdd535340260b6ec4bbcca17d0ee08.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/wow.min-120bf5da27a59677926579d1133056d4.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.magnific-popup.min-b72af4838cf324dfb4a316afa7e7384b.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.stellar-b7230b70077609326e6c84e940e9fd3e.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/typed-1601815a67af0326c9c285d79f8189e0.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.scrollto-713881b0f93cbadedfb1d6c800447a9e.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.datetimepicker.min-91249ac52a0a55e5e7028c94c42cd1ec.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/parsley.min-c3819773e78674d95d1b6f9cdedc58a0.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/Tabs.min-0f2c916549bb40299ef546674b34ed35.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/Form.min-a24a18f9fbd96641745037db0b6a76a5.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/custom-b7943959fc70f257f91e3115ec38d1b4.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.themepunch.plugins.min-86812468ef9858ddca69ff9487a80cf4.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/jquery.themepunch.revolution.min-40d7a088dd97b57b4a9265919cf52887.js.1660050439.gzip" type="text/javascript"></script>
+<script src="/typo3temp/assets/compressed/revslider-custom-4e0c143f57c55ad7262a7d09d4acbf12.js.1660050439.gzip" type="text/javascript"></script>
+
+
+</body>
+</html>";s:10:"cache_data";a:3:{s:6:"config";a:37:{s:11:"tx_extbase.";a:3:{s:12:"persistence.";a:3:{s:8:"classes.";a:20:{s:35:"GeorgRinger\News\Domain\Model\News.";a:1:{s:11:"subclasses.";a:3:{i:0;s:41:"GeorgRinger\News\Domain\Model\NewsDefault";i:1;s:42:"GeorgRinger\News\Domain\Model\NewsInternal";i:2;s:42:"GeorgRinger\News\Domain\Model\NewsExternal";}}s:42:"GeorgRinger\News\Domain\Model\NewsDefault.";a:1:{s:8:"mapping.";a:2:{s:10:"recordType";s:1:"0";s:9:"tableName";s:25:"tx_news_domain_model_news";}}s:43:"GeorgRinger\News\Domain\Model\NewsInternal.";a:1:{s:8:"mapping.";a:2:{s:10:"recordType";s:1:"1";s:9:"tableName";s:25:"tx_news_domain_model_news";}}s:43:"GeorgRinger\News\Domain\Model\NewsExternal.";a:1:{s:8:"mapping.";a:2:{s:10:"recordType";s:1:"2";s:9:"tableName";s:25:"tx_news_domain_model_news";}}s:41:"TYPO3\CMS\Extbase\Domain\Model\FileMount.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:14:"sys_filemounts";s:8:"columns.";a:3:{s:6:"title.";a:1:{s:13:"mapOnProperty";s:5:"title";}s:5:"path.";a:1:{s:13:"mapOnProperty";s:4:"path";}s:5:"base.";a:1:{s:13:"mapOnProperty";s:14:"isAbsolutePath";}}}}s:45:"TYPO3\CMS\Extbase\Domain\Model\FileReference.";a:1:{s:8:"mapping.";a:1:{s:9:"tableName";s:18:"sys_file_reference";}}s:36:"TYPO3\CMS\Extbase\Domain\Model\File.";a:1:{s:8:"mapping.";a:1:{s:9:"tableName";s:8:"sys_file";}}s:43:"TYPO3\CMS\Extbase\Domain\Model\BackendUser.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:8:"be_users";s:8:"columns.";a:8:{s:9:"username.";a:1:{s:13:"mapOnProperty";s:8:"userName";}s:6:"admin.";a:1:{s:13:"mapOnProperty";s:15:"isAdministrator";}s:8:"disable.";a:1:{s:13:"mapOnProperty";s:10:"isDisabled";}s:9:"realName.";a:1:{s:13:"mapOnProperty";s:8:"realName";}s:10:"starttime.";a:1:{s:13:"mapOnProperty";s:16:"startDateAndTime";}s:8:"endtime.";a:1:{s:13:"mapOnProperty";s:14:"endDateAndTime";}s:14:"disableIPlock.";a:1:{s:13:"mapOnProperty";s:16:"ipLockIsDisabled";}s:10:"lastlogin.";a:1:{s:13:"mapOnProperty";s:20:"lastLoginDateAndTime";}}}}s:48:"TYPO3\CMS\Extbase\Domain\Model\BackendUserGroup.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:9:"be_groups";s:8:"columns.";a:14:{s:9:"subgroup.";a:1:{s:13:"mapOnProperty";s:9:"subGroups";}s:10:"groupMods.";a:1:{s:13:"mapOnProperty";s:7:"modules";}s:14:"tables_select.";a:1:{s:13:"mapOnProperty";s:15:"tablesListening";}s:14:"tables_modify.";a:1:{s:13:"mapOnProperty";s:12:"tablesModify";}s:17:"pagetypes_select.";a:1:{s:13:"mapOnProperty";s:9:"pageTypes";}s:19:"non_exclude_fields.";a:1:{s:13:"mapOnProperty";s:20:"allowedExcludeFields";}s:19:"explicit_allowdeny.";a:1:{s:13:"mapOnProperty";s:22:"explicitlyAllowAndDeny";}s:18:"allowed_languages.";a:1:{s:13:"mapOnProperty";s:16:"allowedLanguages";}s:16:"workspace_perms.";a:1:{s:13:"mapOnProperty";s:19:"workspacePermission";}s:15:"db_mountpoints.";a:1:{s:13:"mapOnProperty";s:14:"databaseMounts";}s:17:"file_permissions.";a:1:{s:13:"mapOnProperty";s:24:"fileOperationPermissions";}s:13:"lockToDomain.";a:1:{s:13:"mapOnProperty";s:12:"lockToDomain";}s:14:"hide_in_lists.";a:1:{s:13:"mapOnProperty";s:10:"hideInList";}s:9:"TSconfig.";a:1:{s:13:"mapOnProperty";s:8:"tsConfig";}}}}s:44:"TYPO3\CMS\Extbase\Domain\Model\FrontendUser.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:8:"fe_users";s:8:"columns.";a:1:{s:13:"lockToDomain.";a:1:{s:13:"mapOnProperty";s:12:"lockToDomain";}}}}s:49:"TYPO3\CMS\Extbase\Domain\Model\FrontendUserGroup.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:9:"fe_groups";s:8:"columns.";a:1:{s:13:"lockToDomain.";a:1:{s:13:"mapOnProperty";s:12:"lockToDomain";}}}}s:40:"TYPO3\CMS\Extbase\Domain\Model\Category.";a:1:{s:8:"mapping.";a:1:{s:9:"tableName";s:12:"sys_category";}}s:42:"TYPO3\CMS\Beuser\Domain\Model\BackendUser.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:8:"be_users";s:8:"columns.";a:4:{s:18:"allowed_languages.";a:1:{s:13:"mapOnProperty";s:16:"allowedLanguages";}s:17:"file_mountpoints.";a:1:{s:13:"mapOnProperty";s:15:"fileMountPoints";}s:15:"db_mountpoints.";a:1:{s:13:"mapOnProperty";s:13:"dbMountPoints";}s:10:"usergroup.";a:1:{s:13:"mapOnProperty";s:17:"backendUserGroups";}}}}s:47:"TYPO3\CMS\Beuser\Domain\Model\BackendUserGroup.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:9:"be_groups";s:8:"columns.";a:1:{s:9:"subgroup.";a:1:{s:13:"mapOnProperty";s:9:"subGroups";}}}}s:39:"TYPO3\CMS\SysNote\Domain\Model\SysNote.";a:1:{s:8:"mapping.";a:3:{s:9:"tableName";s:8:"sys_note";s:10:"recordType";s:0:"";s:8:"columns.";a:3:{s:7:"crdate.";a:1:{s:13:"mapOnProperty";s:12:"creationDate";}s:7:"tstamp.";a:1:{s:13:"mapOnProperty";s:16:"modificationDate";}s:7:"cruser.";a:1:{s:13:"mapOnProperty";s:6:"author";}}}}s:44:"GeorgRinger\News\Domain\Model\FileReference.";a:1:{s:8:"mapping.";a:1:{s:9:"tableName";s:18:"sys_file_reference";}}s:40:"GeorgRinger\News\Domain\Model\TtContent.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:10:"tt_content";s:8:"columns.";a:4:{s:8:"altText.";a:1:{s:13:"mapOnProperty";s:7:"altText";}s:10:"titleText.";a:1:{s:13:"mapOnProperty";s:9:"titleText";}s:7:"colPos.";a:1:{s:13:"mapOnProperty";s:6:"colPos";}s:6:"CType.";a:1:{s:13:"mapOnProperty";s:5:"CType";}}}}s:39:"GeorgRinger\News\Domain\Model\Category.";a:1:{s:8:"mapping.";a:2:{s:9:"tableName";s:12:"sys_category";s:8:"columns.";a:1:{s:7:"parent.";a:1:{s:13:"mapOnProperty";s:14:"parentcategory";}}}}s:36:"In2code\Powermail\Domain\Model\User.";a:1:{s:8:"mapping.";a:1:{s:9:"tableName";s:8:"fe_users";}}s:41:"In2code\Powermail\Domain\Model\UserGroup.";a:1:{s:8:"mapping.";a:1:{s:9:"tableName";s:9:"fe_groups";}}}s:28:"enableAutomaticCacheClearing";s:1:"1";s:20:"updateReferenceIndex";s:1:"0";}s:4:"mvc.";a:2:{s:16:"requestHandlers.";a:4:{s:48:"TYPO3\CMS\Extbase\Mvc\Web\FrontendRequestHandler";s:48:"TYPO3\CMS\Extbase\Mvc\Web\FrontendRequestHandler";s:47:"TYPO3\CMS\Extbase\Mvc\Web\BackendRequestHandler";s:47:"TYPO3\CMS\Extbase\Mvc\Web\BackendRequestHandler";s:40:"TYPO3\CMS\Extbase\Mvc\Cli\RequestHandler";s:40:"TYPO3\CMS\Extbase\Mvc\Cli\RequestHandler";s:48:"TYPO3\CMS\Fluid\Core\Widget\WidgetRequestHandler";s:48:"TYPO3\CMS\Fluid\Core\Widget\WidgetRequestHandler";}s:48:"throwPageNotFoundExceptionIfActionCantBeResolved";s:1:"0";}s:9:"features.";a:3:{s:20:"skipDefaultArguments";s:1:"0";s:25:"ignoreAllEnableFieldsInBe";s:1:"0";s:38:"requireCHashArgumentForActionArguments";s:1:"1";}}s:12:"absRefPrefix";s:4:"auto";s:8:"no_cache";s:1:"0";s:14:"uniqueLinkVars";s:1:"1";s:14:"pageTitleFirst";s:1:"1";s:8:"linkVars";s:1:"L";s:18:"prefixLocalAnchors";s:1:"1";s:13:"renderCharset";s:5:"utf-8";s:11:"metaCharset";s:5:"utf-8";s:7:"doctype";s:5:"html5";s:15:"removeDefaultJS";s:1:"0";s:20:"inlineStyle2TempFile";s:1:"1";s:8:"admPanel";s:1:"0";s:5:"debug";s:1:"0";s:12:"cache_period";s:5:"86400";s:16:"sendCacheHeaders";s:1:"0";s:9:"intTarget";s:0:"";s:9:"extTarget";s:0:"";s:20:"disablePrefixComment";s:1:"1";s:12:"index_enable";s:1:"1";s:15:"index_externals";s:1:"1";s:14:"index_metatags";s:1:"1";s:17:"tx_realurl_enable";s:1:"1";s:23:"simulateStaticDocuments";s:1:"0";s:16:"sys_language_uid";s:1:"0";s:20:"sys_language_overlay";s:1:"1";s:17:"sys_language_mode";s:16:"content_fallback";s:8:"language";s:2:"de";s:10:"locale_all";s:11:"en_US.UTF-8";s:17:"htmlTag_setParams";s:0:"";s:10:"compressJs";s:1:"1";s:11:"compressCss";s:1:"1";s:13:"concatenateJs";s:1:"0";s:14:"concatenateCss";s:1:"1";s:25:"spamProtectEmailAddresses";s:1:"2";s:33:"spamProtectEmailAddresses_atSubst";s:6:"&copy;";s:12:"xhtmlDoctype";s:5:"html5";}s:8:"rootLine";a:1:{i:0;a:23:{s:3:"pid";i:0;s:3:"uid";i:2;s:9:"t3ver_oid";i:0;s:10:"t3ver_wsid";i:0;s:11:"t3ver_state";i:0;s:5:"title";s:10:"Willkommen";s:5:"alias";s:0:"";s:9:"nav_title";s:0:"";s:5:"media";s:2:"52";s:6:"layout";i:0;s:6:"hidden";i:0;s:9:"starttime";i:0;s:7:"endtime";i:0;s:8:"fe_group";s:0:"";s:16:"extendToSubpages";i:0;s:7:"doktype";i:1;s:8:"TSconfig";N;s:17:"tsconfig_includes";s:0:"";s:11:"is_siteroot";i:1;s:9:"mount_pid";i:0;s:12:"mount_pid_ol";i:0;s:13:"fe_login_mode";i:0;s:25:"backend_layout_next_level";s:15:"pagets__default";}}s:10:"mainScript";s:9:"index.php";}s:7:"expires";i:1660136836;s:6:"tstamp";i:1660050436;s:13:"pageTitleInfo";a:3:{s:5:"title";s:10:"Willkommen";s:12:"altPageTitle";s:0:"";s:15:"indexedDocTitle";s:10:"Willkommen";}}1660136836    pageId_249606     

@@ -1,0 +1,43 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace n=GeorgRinger\News\ViewHelpers}
+<f:layout name="General"/>
+
+<!--
+	=====================
+		Templates/Tag/List.html
+-->
+
+<f:section name="content">
+    <f:if condition="{tags}">
+        <div class="widget widget_tags">
+            <f:render partial="Content/Header/Header" arguments="{
+                                                            header: contentObjectData.header,
+                                                            layout: contentObjectData.header_layout,
+                                                            link: contentObjectData.header_link,
+                                                            position: contentObjectData.header_position,
+                                                            style: contentObjectData.header_style}"/>
+            <ul>
+                <f:for each="{tags}" as="tag">
+                    <li>
+                        <f:if condition="{tag.uid} == {overwriteDemand.tags}">
+                            <f:then>
+                                <f:link.page title="{tag.title}" class="active" pageUid="{settings.listPid}"
+                                             additionalParams="{tx_news_pi1:{overwriteDemand:{tags: tag}}}">
+                                    {tag.title}
+                                </f:link.page>
+                            </f:then>
+                            <f:else>
+                                <f:link.page title="{tag.title}" pageUid="{settings.listPid}"
+                                             additionalParams="{tx_news_pi1:{overwriteDemand:{tags: tag}}}">
+                                    {tag.title}
+                                </f:link.page>
+                            </f:else>
+                        </f:if>
+
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+    </f:if>
+</f:section>
+</html>

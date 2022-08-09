@@ -1,0 +1,17 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:render section="column" arguments="{content: data.tx_gridelements_view_column_100, background: assets.0}"/>
+<f:render section="column" arguments="{content: data.tx_gridelements_view_column_120, background: assets.1}"/>
+<f:render section="column" arguments="{content: data.tx_gridelements_view_column_110, background: assets.2}"/>
+
+
+<f:section name="column">
+    <div style="background-image: url('{f:uri.image(image: background)}'); background-size: cover"
+         class="box-one-third light-text">
+        <div class="inner wow" data-wow-delay="0s">
+            <f:format.raw>{content}</f:format.raw>
+        </div>
+    </div>
+</f:section>
+
+</html>

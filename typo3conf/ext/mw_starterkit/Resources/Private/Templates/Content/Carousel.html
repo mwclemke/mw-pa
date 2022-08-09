@@ -1,0 +1,13 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:if condition="{data.tx_gridelements_view_children}">
+    <div class="testi-carousel testi-slider wow fadeIn" data-wow-delay="0s"
+         data-wow-duration="1s">
+        <f:for each="{data.tx_gridelements_view_children}" as="item">
+            <div class="item">
+                <f:cObject typoscriptObjectPath="tt_content" data="{item}"/>
+            </div>
+        </f:for>
+    </div>
+</f:if>
+</html>
