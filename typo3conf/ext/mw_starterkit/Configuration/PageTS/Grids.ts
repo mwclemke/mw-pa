@@ -1,1 +1,0 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:mw_starterkit/Configuration/PageTS/Grids/" extensions="ts">

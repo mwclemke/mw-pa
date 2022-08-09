@@ -1,7 +1,0 @@
-root = true
-
-[*.html]
-indent_style = tab
-
-[*.xlf]
-indent_style = tab
