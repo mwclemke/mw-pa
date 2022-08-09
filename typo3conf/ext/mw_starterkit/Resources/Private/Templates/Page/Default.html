@@ -1,0 +1,12 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
+    <f:layout name="Default"/>
+
+    <f:section name="Content">
+        <f:render partial="Structure/Subheader" section="Main" arguments="{_all}"/>
+        <div class="clearfix"></div>
+            <div id="content" class="{f:if(condition: '{data.layout} == 1', then: 'no-padding', else: 'no-padding')}">
+            <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{pageUid: '{data.uid}', colPos: '0'}"/>
+        </div>
+    </f:section>
+</div>

@@ -1,0 +1,141 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:switch expression="{data.layout}">
+    <f:case value="110">
+        <div class="team-profile">
+
+            <f:media file="{files.0}" class="img-responsive wow fadeInUp" alt=""/>
+            <div class="text wow fadeInUp" data-wow-delay=".2s"
+                 style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                <h3>{data.header}</h3>
+                <h4>{data.subheader}</h4>
+                <f:format.html>{data.bodytext}</f:format.html>
+                <div class="team-social-icons">
+                    <f:if condition="{data.mw_profile_facebook}">
+                        <f:link.external uri="{data.mw_profile_facebook}"><i class="fa fa-facebook"></i>
+                        </f:link.external>
+                    </f:if>
+                    <f:if condition="{data.mw_profile_google}">
+                        <f:link.external uri="{data.mw_profile_google}"><i class="fa fa-google-plus"></i>
+                        </f:link.external>
+                    </f:if>
+                    <f:if condition="{data.mw_profile_twitter}">
+                        <f:link.external uri="{data.mw_profile_twitter}"><i class="fa fa-twitter"></i></f:link.external>
+                    </f:if>
+                    <f:if condition="{data.mw_profile_instagram}">
+                        <f:link.external uri="{data.mw_profile_instagram}"><i class="fa fa-instagram"></i>
+                        </f:link.external>
+                    </f:if>
+                </div>
+            </div>
+        </div>
+    </f:case>
+    <f:case value="100">
+        <div id="gallery" class="gallery full-gallery ex-gallery zoom-gallery">
+            <f:render partial="Gallery" arguments="{_all}"/>
+        </div>
+    </f:case>
+
+    <f:defaultCase>
+
+        <f:if condition="{data.assets}">
+            <f:then>
+                <f:switch expression="{data.imageorient}">
+                    <f:case value="0">
+                        <f:comment>Image on top</f:comment>
+                        <div class="media">
+                            <f:render partial="Header/Header"
+                                      arguments="{header: data.header, layout: data.header_layout, position: data.header_position, style: data.header_style, subtitle:data.subheader}"/>
+
+                            <div class="center-block">
+                                <f:render partial="Image" arguments="{_all}"/>
+                            </div>
+                            <div class="media-body">
+                                <f:format.html>{data.bodytext}</f:format.html>
+                            </div>
+                        </div>
+                    </f:case>
+                    <f:case value="8">
+                        <f:comment>Image at bottom</f:comment>
+                        <div class="media">
+                            <f:render partial="Header/Header"
+                                      arguments="{header: data.header, layout: data.header_layout, position: data.header_position, style: data.header_style, subtitle:data.subheader}"/>
+                            <div class="media-body">
+                                <f:format.html>{data.bodytext}</f:format.html>
+                            </div>
+                            <div class="center-block">
+                                <f:render partial="Image" arguments="{_all}"/>
+                            </div>
+                        </div>
+                    </f:case>
+                    <f:case value="17">
+                        <f:comment>In text right</f:comment>
+                        <div class="media">
+                            <f:render partial="Header/Header"
+                                      arguments="{header: data.header, layout: data.header_layout, position: data.header_position, style: data.header_style, subtitle:data.subheader}"/>
+                            <div class="pull-right">
+                                <f:render partial="Image"
+                                          arguments="{data: data, files:files, class:'media-object'}"/>
+                            </div>
+
+                            <div class="">
+                                <f:format.html>{data.bodytext}</f:format.html>
+                            </div>
+                        </div>
+                    </f:case>
+                    <f:case value="18">
+                        <f:comment>In text left</f:comment>
+                        <div class="media">
+                            <f:render partial="Header/Header"
+                                      arguments="{header: data.header, layout: data.header_layout, position: data.header_position, style: data.header_style, subtitle:data.subheader}"/>
+                            <div class="pull-left">
+                                <f:render partial="Image"
+                                          arguments="{data: data, files:files, class:'media-object'}"/>
+                            </div>
+                            <div class="">
+                                <f:format.html>{data.bodytext}</f:format.html>
+                            </div>
+                        </div>
+                    </f:case>
+                    <f:case value="25">
+                        <f:comment>Beside text right</f:comment>
+                        <div class="media">
+                            <div class="media-body">
+                                <f:render partial="Image"
+                                          arguments="{header: data.header, layout: data.header_layout, position: data.header_position, style: '1', subtitle:data.subheader}"/>
+                                <f:format.html>{data.bodytext}</f:format.html>
+                            </div>
+                            <div class="media-right">
+                                <f:render partial="Image"
+                                          arguments="{data: data, files:files, class:'media-object'}"/>
+                            </div>
+                        </div>
+                    </f:case>
+                    <f:case value="26">
+                        <f:comment>Beside text left</f:comment>
+                        <div class="media">
+                            <div class="media-left">
+                                <f:render partial="Image"
+                                          arguments="{data: data, files:files, class:'media-object'}"/>
+                            </div>
+                            <div class="media-body">
+                                <f:render partial="Header/Header"
+                                          arguments="{header: data.header, layout: data.header_layout, position: data.header_position, style: '1', subtitle:data.subheader}"/>
+                                <f:format.html>{data.bodytext}</f:format.html>
+                            </div>
+                        </div>
+                    </f:case>
+                </f:switch>
+            </f:then>
+            <f:else>
+                <div class="media-body">
+                    <f:render partial="Header/Header"
+                              arguments="{header: data.header, layout: data.header_layout, position: data.header_position, style: data.header_style, subtitle:data.subheader}"/>
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </div>
+            </f:else>
+        </f:if>
+    </f:defaultCase>
+</f:switch>
+
+
+</html>

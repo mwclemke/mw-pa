@@ -1,0 +1,33 @@
+<html xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers" data-namespace-typo3-fluid="true">
+{namespace n=GeorgRinger\News\ViewHelpers}<!--
+	=====================
+		Partials/List/Item.html
+-->
+<li>
+    <n:excludeDisplayedNews newsItem="{newsItem}"/>
+    <div class="date-box">
+        <span class="day"><f:format.date format="d">{newsItem.datetime}</f:format.date></span>
+        <span class="month text-uppercase"><f:format.date format="M">{newsItem.datetime}</f:format.date></span>
+    </div>
+    <div class="txt">
+        <h5>
+            <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+                {newsItem.title}
+            </n:link>
+        </h5>
+        <div>
+            <div>
+                <f:if condition="{newsItem.teaser}">
+                    <f:then>
+                        <span itemprop="description">{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</span>
+                    </f:then>
+                    <f:else>
+                        <span itemprop="description">{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.html()}</span>
+                    </f:else>
+                </f:if>
+            </div>
+        </div>
+
+    </div>
+</li>
+</html>

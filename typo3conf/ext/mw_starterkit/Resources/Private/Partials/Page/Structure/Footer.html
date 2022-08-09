@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://xsd.helhum.io/ns/typo3/cms-fluid/master/ViewHelpers">
+<head>
+    <title>Header Html</title>
+</head>
+<body>
+<f:section name="Main">
+
+    <!-- footer begin -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-4">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContentSlide"
+                               data="{pageUid: '{data.uid}', colPos: '10'}"/>
+                </div>
+
+                <div class="col-md-4">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContentSlide"
+                               data="{pageUid: '{data.uid}', colPos: '11'}"/>
+                </div>
+
+                <div class="col-md-4">
+                    <f:cObject typoscriptObjectPath="lib.dynamicContentSlide"
+                               data="{pageUid: '{data.uid}', colPos: '12'}"/>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer close -->
+</f:section>
+</body>
+</html>
